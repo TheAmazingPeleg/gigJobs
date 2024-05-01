@@ -1,0 +1,36 @@
+{
+  "name": "gigjobs",
+  "version": "1.0.0",
+  "description": "Practical Website Foundations: A Web Package for Streamlined Development",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devStart": "nodemon app.js",
+    "debug": "ndb app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAmazingPeleg/NodeWebFoundation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheAmazingPeleg/NodeWebFoundation/issues"
+  },
+  "homepage": "https://github.com/TheAmazingPeleg/NodeWebFoundation#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.2",
+    "ndb": "^1.1.5",
+    "nodemon": "^3.1.0",
+    "validator": "^13.11.0",
+    "xss-clean": "^0.1.4"
+  }
+}
