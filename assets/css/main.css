@@ -1,0 +1,44 @@
+.full-screen-image {
+    background-color: #50C878;
+    background-image: url('../images/headerBg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: calc(100vh - 60px);
+    padding-top: 20vh;
+}
+.custom-nav-style {
+    background: white;
+    padding-right: 10px;
+}
+.cbtn {
+    background: #50C878;
+    border: 2px solid #50C878;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white
+}
+.cbtn:hover {
+    background: #C1E1C5;
+    transition: 200ms;
+    border: 2px solid #C1E1C5;
+    color: black;
+}
+.nav-signup {
+    background:white;
+    color: black;
+    border: 2px solid #50C878;
+}
+.nav-signup:hover {
+    background: #50C878;
+    color: white;
+    border: 2px solid #50C878;
+}
+.page-footer {
+    background-image: url('../images/footerBg.png');
+    background-position: top;
+    height: 20vh;
+    margin-top: 5vh;
+}
+.job-card {
+    margin-bottom: 20px;
+}

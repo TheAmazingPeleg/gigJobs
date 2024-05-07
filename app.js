@@ -2,12 +2,20 @@ const express = require('express');
 const dotenv = require('dotenv');
 dotenv.config({ path: __dirname + '/utils/.env.config' });
 const mongoose = require('mongoose');
+const mainRouter = require(__dirname + '/routes/mainRouter');
 const userRouter = require(__dirname + '/routes/userRouter');
-let cookieParser = require('cookie-parser'); 
+const jobRouter = require(__dirname + '/routes/jobRouter');
+const cookieParser = require('cookie-parser'); 
+const ejs = require('ejs');
 
 const app = express();
 
 app.use(cookieParser()); 
+
+//Adding ejs
+app.set('view engine', 'ejs');
+app.engine('ejs', ejs.__express);
+app.use('/assets', express.static(__dirname + '/assets'));
 
 //Including Security Middlewares
 const limiter = require(__dirname + '/utils/rateLimiter');
@@ -49,12 +57,11 @@ mongoose.connect(process.env.CONNECTION_STRING).then(() => {
     console.error(err);
 });
 
-
 /* Write here your code */
 app.use('/user', userRouter);
-app.route('/').get((req, res) => {
-    res.send('Hello World!');
-});
+app.use('/job', jobRouter);
+app.route('/').get(mainRouter);
+
 /* Good luck! */
 
 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>חלטוריסט</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="/assets/css/main.css" rel="stylesheet">
+	</head>
+	 <body>
+		<nav class="navbar navbar-expand-lg custom-nav-style">
+			<form class="form-inline">
+				<button class="cbtn" type="button">התחבר</button>
+				<button class="cbtn nav-signup" type="button">הרשם</button>
+			</form>
+		</nav>
+		<section class="full-screen-image">
+			<div class="container d-flex justify-content-center">
+				<div class="row col-lg-8 col-sm-12 text-light">
+					<h1 class="col-12 image-text">חלטוריסט</h1>
+					<p class="col-12 image-text">מצא עבודה מזדמנת בקלות!</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container text-center">
+				<div class="row col-12">
+					<div class="col-12 flex justify-content-center">
+						<%= jobs %>
+						<h1>חפש עבודה</h1>
+						<form class="form-group">
+							<input class="col-8" type="text" placeholder="כל מה שעולה לך לראש">
+							<button type="submit" class="cbtn" style="margin-top: 10px">חפש</button>
+						  </form>
+					</div>
+				</div>
+				<div class="row col-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card job-card">
+									<img src="" class="card-img-top" alt="Job 1 Image">
+									<div class="card-body">
+										<h5 class="card-title">Product 1</h5>
+										<p class="card-text">Product 1 Detail Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p class="card-text">$19.99</p>
+										<button class="cbtn" type="button">הצג</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card job-card">
+									<img src="" class="card-img-top" alt="Job 2 Image">
+									<div class="card-body">
+										<h5 class="card-title">Product 2</h5>
+										<p class="card-text">Product 2 Detail Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p class="card-text">$24.99</p>
+										<button class="cbtn" type="button">הצג</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card job-card">
+									<img src="" class="card-img-top" alt="Job 3 Image">
+									<div class="card-body">
+										<h5 class="card-title">Product 3</h5>
+										<p class="card-text">Product 3 Detail Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p class="card-text">$29.99</p>
+										<button class="cbtn" type="button">הצג</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-footer">
+			<div class="container text-center text-light" style="padding-top: 10vh">
+				<div class="row">
+					<p>כל הזכויות שמורות</p>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>
