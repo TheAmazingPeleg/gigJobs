@@ -6,16 +6,10 @@ const mainRouter = require(__dirname + '/routes/mainRouter');
 const userRouter = require(__dirname + '/routes/userRouter');
 const jobRouter = require(__dirname + '/routes/jobRouter');
 const cookieParser = require('cookie-parser'); 
-const ejs = require('ejs');
 
 const app = express();
 
 app.use(cookieParser()); 
-
-//Adding ejs
-app.set('view engine', 'ejs');
-app.engine('ejs', ejs.__express);
-app.use('/assets', express.static(__dirname + '/assets'));
 
 //Including Security Middlewares
 const limiter = require(__dirname + '/utils/rateLimiter');
