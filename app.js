@@ -6,8 +6,13 @@ const mainRouter = require(__dirname + '/routes/mainRouter');
 const userRouter = require(__dirname + '/routes/userRouter');
 const jobRouter = require(__dirname + '/routes/jobRouter');
 const cookieParser = require('cookie-parser'); 
+const cors = require('cors');
 
 const app = express();
+
+// Enable for react to use fetch
+app.use(cors());
+
 
 app.use(cookieParser()); 
 
